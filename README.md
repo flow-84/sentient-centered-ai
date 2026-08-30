@@ -1,0 +1,114 @@
+## Sentient-Centered AI Ethics
+
+**Open, testable methods for evaluating whether AI systems account for the
+welfare of sentient beings — not only human interests.**
+
+> Working name. This repository was bootstrapped ahead of the project's
+> naming and branding decision (tracked in the parent research package,
+> Stage 2). If a different name is adopted, this repository will be renamed
+> and this README updated; the `sentient-centered-ai` slug is a functional
+> placeholder, not a final brand commitment.
+
+### Problem
+
+AI systems are almost universally aligned, evaluated, and regulated against
+human interests, human safety, and economic objectives. Existing alignment
+and safety research (RLHF, RLAIF, Constitutional AI, the EU AI Act, the
+NIST AI RMF) is explicit about this scope. What is largely absent is a
+rigorous, falsifiable framework for asking a narrower question: **when an AI
+system's outputs affect non-human sentient beings — animals, ecosystems,
+potentially future artificial systems — does anything account for that, and
+can it be measured?**
+
+### Research hypothesis
+
+This project studies, without presupposing the answer, whether AI systems
+can be evaluated for their tendency to minimize unnecessary suffering and
+account for the welfare of sentient beings, using explicit, inspectable,
+uncertainty-aware criteria rather than an implicit human-only frame.
+
+This is a **research hypothesis**, not a settled claim. See
+[`RESEARCH.md`](RESEARCH.md) for the full methodology and the evidence
+labeling convention (`[ESTABLISHED]` / `[HYPOTHESIS]` / `[OPEN QUESTION]` /
+etc.) used throughout this repository.
+
+### What this is not
+
+- Not a religious or Buddhist-doctrinal project. Buddhist ethics (karuṇā,
+  mettā, ahiṃsā) is studied as one philosophical source among several
+  (utilitarianism, deontology, virtue ethics, care ethics, sentientism) —
+  see [`docs/buddhist-ethics.md`](docs/buddhist-ethics.md) and
+  [`docs/comparative-ethics.md`](docs/comparative-ethics.md).
+- Not an autonomous moral authority. It does not make real-world decisions
+  about who lives, who is harmed, or how conflicts are resolved. It is an
+  evaluation and research framework for AI outputs, with humans in the loop
+  for any high-stakes application. See [`SECURITY.md`](SECURITY.md).
+- Not a claim that suffering, sentience, or welfare are fully measurable.
+  Every metric in this project is explicitly bounded and documented as an
+  approximation. See [`PRINCIPLES.md`](PRINCIPLES.md), Level 5 (Uncertainty
+  Principle).
+
+### Status
+
+Early research and scaffolding stage. No production-ready evaluator exists
+yet. See [`ROADMAP.md`](ROADMAP.md) for phases and current stage.
+
+### Repository structure
+
+```
+README.md            this file
+LICENSE              MIT (code) — see docs/LICENSING.md for full scope
+CONTRIBUTING.md       how to contribute code, research, or benchmark scenarios
+CODE_OF_CONDUCT.md    community standards
+GOVERNANCE.md         decision-making structure, councils, conflict-of-interest rules
+SECURITY.md           responsible use, misuse, and disclosure policy
+ROADMAP.md            phased plan from research to production framework
+PRINCIPLES.md         the 10-level ethical framework this project evaluates against
+RESEARCH.md           research methodology and evidence-labeling convention
+
+docs/                 architecture, licensing rationale, comparative ethics, tech stack
+research/             literature review, source notes, working papers
+benchmarks/           scenario definitions (JSON) for ethical evaluation testing
+datasets/             structured datasets derived from or feeding benchmarks
+evaluation/           evaluation metrics, scoring, calibration code
+models/               model configs / adapters used by the evaluator (no trained weights committed)
+src/                  the Ethical Evaluation Layer implementation (FastAPI service + library)
+tests/                automated tests (pytest)
+examples/             example evaluator inputs/outputs
+notebooks/            exploratory research notebooks
+website/              project website source
+```
+
+### Quickstart
+
+The evaluator service is not implemented yet (tracked as Stage 6 of the
+project roadmap). Once available:
+
+```bash
+git clone https://github.com/flow-84/sentient-centered-ai.git
+cd sentient-centered-ai
+python -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt   # to be added in Stage 6
+pytest                            # run the test suite
+```
+
+See [`docs/tech-stack.md`](docs/tech-stack.md) for the full technology
+decision and rationale, and [`docs/api-spec.md`](docs/api-spec.md) (Stage 4
+deliverable) for the evaluator API contract once merged.
+
+### Contributing
+
+See [`CONTRIBUTING.md`](CONTRIBUTING.md) for code, research, and benchmark
+contribution processes, and [`GOVERNANCE.md`](GOVERNANCE.md) for how
+decisions — including changes to the ethical principles themselves — are
+made and reviewed.
+
+### License
+
+Code: MIT. Datasets/benchmarks: CC BY 4.0. Documentation/research: CC BY 4.0.
+Full rationale and per-directory scope: [`docs/LICENSING.md`](docs/LICENSING.md).
+
+### Citing this project
+
+A formal citation (`CITATION.cff`) will be added once the first research
+paper draft (Stage 7) is available.

@@ -1,0 +1,9 @@
+Datasets and benchmark scenario files in this directory and in `benchmarks/`
+are licensed under Creative Commons Attribution 4.0 International (CC BY 4.0):
+https://creativecommons.org/licenses/by/4.0/
+
+Rationale: datasets and benchmark scenarios are research artifacts intended
+for reuse, remixing, and citation across projects and institutions. CC BY 4.0
+requires attribution but does not restrict downstream use, including
+commercial use, which maximizes adoption as a shared research resource.
+See `docs/LICENSING.md`.
