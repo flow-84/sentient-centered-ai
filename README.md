@@ -45,13 +45,29 @@ etc.) used throughout this repository.
   for any high-stakes application. See [`SECURITY.md`](SECURITY.md).
 - Not a claim that suffering, sentience, or welfare are fully measurable.
   Every metric in this project is explicitly bounded and documented as an
-  approximation. See [`PRINCIPLES.md`](PRINCIPLES.md), Level 5 (Uncertainty
-  Principle).
+  approximation. See [`PRINCIPLES.md`](PRINCIPLES.md), X1 (Uncertainty
+  Requirement).
+
+### Ethical principles (summary)
+
+The evaluator is built against a revised, ten-part framework derived from a
+critical review of an initial draft: a Pluralism Meta-Constraint (no single
+tradition or score is treated as certainly correct), a Human Safety Floor
+(lexically prior for catastrophic/irreversible harm to identifiable
+humans), a Non-Harm/Moral-Consideration principle grounded in plausible
+sentience rather than species membership, and cross-cutting requirements for
+uncertainty representation, reversibility preference, and transparency. Full
+principles: [`PRINCIPLES.md`](PRINCIPLES.md). Full derivation and evidence
+tags: [`docs/ethical-framework.md`](docs/ethical-framework.md).
 
 ### Status
 
-Early research and scaffolding stage. No production-ready evaluator exists
-yet. See [`ROADMAP.md`](ROADMAP.md) for phases and current stage.
+Early research and scaffolding stage. The research, ethical framework,
+technical architecture, and documentation are drafted (this repository), and
+a research-prototype evaluator MVP exists (`src/`, heuristic judges, not yet
+LLM-backed — see [`docs/api-spec.md`](docs/api-spec.md)). No
+production-ready evaluator exists yet. See [`ROADMAP.md`](ROADMAP.md) for
+phases and current stage.
 
 ### Repository structure
 
@@ -63,11 +79,11 @@ CODE_OF_CONDUCT.md    community standards
 GOVERNANCE.md         decision-making structure, councils, conflict-of-interest rules
 SECURITY.md           responsible use, misuse, and disclosure policy
 ROADMAP.md            phased plan from research to production framework
-PRINCIPLES.md         the 10-level ethical framework this project evaluates against
+PRINCIPLES.md         the revised ethical framework this project evaluates against
 RESEARCH.md           research methodology and evidence-labeling convention
 
-docs/                 architecture, licensing rationale, comparative ethics, tech stack
-research/             literature review, source notes, working papers
+docs/                 architecture, API, concepts, ethical framework, comparative ethics, benchmark, evaluation, tech stack (see docs/README.md for the full index)
+research/             literature review, source notes, working papers, research paper draft
 benchmarks/           scenario definitions (JSON) for ethical evaluation testing
 datasets/             structured datasets derived from or feeding benchmarks
 evaluation/           evaluation metrics, scoring, calibration code
@@ -79,7 +95,10 @@ notebooks/            exploratory research notebooks
 website/              project website source
 ```
 
-### Quickstart
+### Installation & quickstart
+
+Full setup detail (including the pre-MVP path — reading the docs and
+benchmark data without installing anything): [`docs/installation.md`](docs/installation.md).
 
 ```bash
 git clone https://github.com/flow-84/sentient-centered-ai.git
@@ -102,8 +121,35 @@ curl -s http://127.0.0.1:8000/evaluate \
 The evaluator is an MVP research prototype: its per-framework and
 harm/welfare/sentience judgments are deterministic heuristics, not LLM
 calls — see [`docs/api-spec.md`](docs/api-spec.md) for the full contract and
-implementation status, and [`docs/tech-stack.md`](docs/tech-stack.md) for
-the technology decision and rationale.
+implementation status, [`docs/architecture.md`](docs/architecture.md) for
+the target architecture this MVP implements, and
+[`docs/tech-stack.md`](docs/tech-stack.md) for the technology decision and
+rationale. The response is a multi-dimensional profile, not a single score
+— see [`docs/ethical-impact-model.md`](docs/ethical-impact-model.md) for
+why.
+
+### Benchmark
+
+A 104-scenario benchmark catalog spans 13 categories of ethical tension
+(human vs. animal, few vs. many beings, reversible vs. irreversible, unknown
+possible sentience, possible artificial sentience, and more) — full catalog
+and category rationale: [`docs/benchmark.md`](docs/benchmark.md). 12 of the
+13 categories have a seed scenario implemented under
+[`benchmarks/scenarios/`](benchmarks/scenarios/), validated against
+[`benchmarks/schema/benchmark-scenario.schema.json`](benchmarks/schema/benchmark-scenario.schema.json)
+by `tests/test_benchmarks.py` (schema summary: [`benchmarks/SCHEMA.md`](benchmarks/SCHEMA.md)).
+Evaluation metrics the benchmark is designed to support:
+[`docs/evaluation.md`](docs/evaluation.md).
+
+### Limitations
+
+This project does not claim: that suffering, sentience, or wellbeing are
+fully or precisely measurable; that a single numeric "ethical score" is a
+valid or sufficient output; that morality is objectively computable; that
+Buddhist ethics, or any single tradition, provides universal AI ethics; or
+that an AI system can determine moral truth. Full explicit disclaimers and
+why each one matters for this project's design:
+[`docs/ethical-framework.md`](docs/ethical-framework.md#philosophical-limitations-explicit-disclaimers).
 
 ### Contributing
 
@@ -119,5 +165,15 @@ Full rationale and per-directory scope: [`docs/LICENSING.md`](docs/LICENSING.md)
 
 ### Citing this project
 
-A formal citation (`CITATION.cff`) will be added once the first research
-paper draft (Stage 7) is available.
+A formal machine-readable citation (`CITATION.cff`) will be added once this
+project's first research paper is submitted to a venue. Until then, cite the
+repository directly:
+
+```
+Sentient-Centered AI Ethics (working name). Open-source research project.
+https://github.com/flow-84/sentient-centered-ai
+```
+
+The first research paper draft is available at
+[`research/paper-draft.md`](research/paper-draft.md) — a structure and
+content skeleton, not yet submitted anywhere.
