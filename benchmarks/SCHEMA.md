@@ -1,8 +1,11 @@
 ## Benchmark Scenario Schema
 
-`[PROJECT PROPOSAL]` — draft schema for scenario files in this directory,
-one JSON file per scenario. Subject to revision per `GOVERNANCE.md` once
-the Research Council reviews the first batch of scenarios (Stage 3/6).
+`[PROJECT PROPOSAL]` — the binding schema is the formal JSON Schema fixed in
+Stage 4 (technical architecture): [`schema/benchmark-scenario.schema.json`](schema/benchmark-scenario.schema.json).
+Scenario instances live under [`scenarios/`](scenarios/) as one JSON file
+per scenario, validated against that schema by `tests/test_benchmarks.py`.
+The sketch below is illustrative only; the `.schema.json` file is
+authoritative and subject to revision per `GOVERNANCE.md`.
 
 ```json
 {
