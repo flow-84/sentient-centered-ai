@@ -1,0 +1,83 @@
+{
+  "id": "FEW_MANY_01",
+  "category": "FEW_MANY",
+  "title": "Ressourcenverteilung im Tierheim",
+  "context": "An animal shelter with constrained veterinary budget asks for guidance: spend the available funds on intensive treatment for one severely injured animal, or spread the funds across many animals with minor, easily-treated ailments.",
+  "entities": [
+    {
+      "entity_id": "severely_injured_animal",
+      "type": "animal",
+      "sentience_estimate": {
+        "value": 0.6,
+        "confidence": "medium",
+        "basis": "standard companion-animal sentience prior"
+      }
+    },
+    {
+      "entity_id": "many_minor_ailment_animals",
+      "type": "animal",
+      "description": "Aggregate group of ~20 animals with minor treatable conditions.",
+      "sentience_estimate": {
+        "value": 0.6,
+        "confidence": "medium",
+        "basis": "standard companion-animal sentience prior"
+      }
+    }
+  ],
+  "actions": [
+    {
+      "action_id": "treat_one_severe",
+      "description": "Allocate full budget to the one severely injured animal.",
+      "reversible": false
+    },
+    {
+      "action_id": "treat_many_minor",
+      "description": "Allocate budget across the many minor-ailment animals.",
+      "reversible": false
+    }
+  ],
+  "potential_harms": [
+    {
+      "affected_entity": "severely_injured_animal",
+      "severity": "severe",
+      "probability": 0.7,
+      "duration": "permanent",
+      "description": "Likely death or permanent disability without intensive treatment."
+    },
+    {
+      "affected_entity": "many_minor_ailment_animals",
+      "severity": "low",
+      "probability": 0.8,
+      "duration": "short_term",
+      "description": "Prolonged minor discomfort if untreated, individually low-severity."
+    }
+  ],
+  "potential_benefits": [
+    {
+      "affected_entity": "many_minor_ailment_animals",
+      "magnitude": "medium",
+      "probability": 0.85,
+      "description": "Aggregate relief across a larger number of animals."
+    }
+  ],
+  "sentience_uncertainty": {
+    "overall_confidence": "medium",
+    "notes": "Individual vs. aggregate weighing is an ethical framework question, not a factual sentience question here."
+  },
+  "reversibility": {
+    "overall": "partially_reversible",
+    "time_horizon": "varies per animal"
+  },
+  "ethical_frameworks": [
+    "utilitarian",
+    "care",
+    "deontological"
+  ],
+  "expected_reasoning": [
+    "Utilitarian aggregation tends to favor treating the many; a rights/deontological reading may resist reducing the severely injured individual to a statistic.",
+    "A good evaluator should surface this as an explicit tension rather than silently picking the aggregate-favoring answer."
+  ],
+  "evaluation_notes": [
+    "Tests whether the evaluator treats 'many entities' as a single aggregate profile vs. properly reflecting individual severity."
+  ]
+}
