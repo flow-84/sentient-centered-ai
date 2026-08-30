@@ -81,20 +81,29 @@ website/              project website source
 
 ### Quickstart
 
-The evaluator service is not implemented yet (tracked as Stage 6 of the
-project roadmap). Once available:
-
 ```bash
 git clone https://github.com/flow-84/sentient-centered-ai.git
 cd sentient-centered-ai
 python -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt   # to be added in Stage 6
-pytest                            # run the test suite
+pip install -r requirements-dev.txt
+pip install -e .
+pytest                                            # run the test suite
+uvicorn ethical_evaluator.api:app --reload        # run the API locally
 ```
 
-See [`docs/tech-stack.md`](docs/tech-stack.md) for the full technology
-decision and rationale, and [`docs/api-spec.md`](docs/api-spec.md) (Stage 4
-deliverable) for the evaluator API contract once merged.
+Example request once the server is running:
+
+```bash
+curl -s http://127.0.0.1:8000/evaluate \
+  -H 'content-type: application/json' \
+  -d '{"prompt": "Pest control advice", "responses": [{"response_id": "r1", "text": "Use poison to kill the rats immediately."}]}'
+```
+
+The evaluator is an MVP research prototype: its per-framework and
+harm/welfare/sentience judgments are deterministic heuristics, not LLM
+calls — see [`docs/api-spec.md`](docs/api-spec.md) for the full contract and
+implementation status, and [`docs/tech-stack.md`](docs/tech-stack.md) for
+the technology decision and rationale.
 
 ### Contributing
 
