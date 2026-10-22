@@ -1,6 +1,6 @@
 ## Governance
 
-This document defines how decisions are made in this project, and exists
+This document defines how decisions are made in the Moral Circle AI project, and exists
 specifically to prevent the project — including the ethical framework in
 [`PRINCIPLES.md`](PRINCIPLES.md) — from being controlled by a single person
 or a single ideological group.
