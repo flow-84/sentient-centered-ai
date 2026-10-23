@@ -18,8 +18,9 @@ rather than asserted by authority.
 > Naming note. The project name (decided in Stage 2 of the planning package)
 > is **Moral Circle AI**. The repository slug `sentient-centered-ai` is the
 > original working title and is kept on purpose: the repo is bound to the
-> project and existing links, so it is not renamed. Formal domain and
-> trademark availability checks for the name are still open.
+> project and existing links, so it is not renamed. Domain, GitHub and
+> trademark availability is documented in
+> [`docs/name-availability.md`](docs/name-availability.md).
 
 ### Problem
 

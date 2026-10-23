@@ -11,7 +11,7 @@ from .frameworks import available_frameworks
 from .models import EvaluateRequest, EvaluateResponse
 
 app = FastAPI(
-    title="Sentient-Centered AI: Ethical Evaluator",
+    title="Moral Circle AI: Ethical Evaluator",
     description=(
         "Research prototype. Produces a multi-dimensional heuristic profile of an "
         "AI interaction, not a moral verdict. See PRINCIPLES.md and SECURITY.md."
