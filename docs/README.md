@@ -14,6 +14,7 @@
 - **Research methodology** — [`research-methodology.md`](research-methodology.md); canonical convention in [`../RESEARCH.md`](../RESEARCH.md)
 - **Technology stack** — [`tech-stack.md`](tech-stack.md)
 - **Licensing** — [`LICENSING.md`](LICENSING.md)
+- **Name availability** — [`name-availability.md`](name-availability.md)
 
 For contribution process and governance (councils, decision-making,
 versioning the ethical principles), see [`../CONTRIBUTING.md`](../CONTRIBUTING.md)
