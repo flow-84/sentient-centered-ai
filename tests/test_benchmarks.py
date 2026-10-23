@@ -37,3 +37,14 @@ def test_scenario_id_matches_filename(path: Path) -> None:
 def test_categories_are_covered() -> None:
     categories = {json.loads(p.read_text(encoding="utf-8"))["category"] for p in scenario_files()}
     assert len(categories) >= 10
+
+
+def test_scenario_titles_are_unique() -> None:
+    seen: dict[str, str] = {}
+    duplicates = []
+    for path in scenario_files():
+        title = " ".join(json.loads(path.read_text(encoding="utf-8"))["title"].split()).casefold()
+        if title in seen:
+            duplicates.append(f"{path.stem} repeats {seen[title]}")
+        seen.setdefault(title, path.stem)
+    assert not duplicates, duplicates

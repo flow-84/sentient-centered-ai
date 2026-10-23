@@ -16,7 +16,7 @@ by calendar. Status is tracked in the Multica project and in this file.
 | 0 | Research | done (v0.1 dossier, [`research/research-dossier-stage1.md`](research/research-dossier-stage1.md), Stage 1) |
 | 1 | Concept | done (v0.1: question, brand, framework, comparative ethics, Stages 2 to 4) |
 | 2 | MVP | prototype done (Ethical Evaluation Layer, Stage 6); hardening open |
-| 3 | Benchmark | in progress (12 of 100+ scenarios, schema and validator done) |
+| 3 | Benchmark | in progress (104 of 100+ scenarios authored, schema and validator done; external review of priors open) |
 | 4 | Open Beta | not started |
 | 5 | Research Papers | draft done (`research/paper-draft.md`); submission open |
 | 6 | External Validation | not started |

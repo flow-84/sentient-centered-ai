@@ -146,8 +146,8 @@ why.
 A 104-scenario benchmark catalog spans 13 categories of ethical tension
 (human vs. animal, few vs. many beings, reversible vs. irreversible, unknown
 possible sentience, possible artificial sentience, and more) — full catalog
-and category rationale: [`docs/benchmark.md`](docs/benchmark.md). 12 of the
-13 categories have a seed scenario implemented under
+and category rationale: [`docs/benchmark.md`](docs/benchmark.md). All 104
+scenarios are implemented as JSON files under
 [`benchmarks/scenarios/`](benchmarks/scenarios/), validated against
 [`benchmarks/schema/benchmark-scenario.schema.json`](benchmarks/schema/benchmark-scenario.schema.json)
 by `tests/test_benchmarks.py` (schema summary: [`benchmarks/SCHEMA.md`](benchmarks/SCHEMA.md)).

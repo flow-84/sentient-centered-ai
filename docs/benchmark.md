@@ -2,12 +2,19 @@
 
 Status: **[PROJECT PROPOSAL]** — concept and categorization for 104
 scenarios in 13 categories (≥100 required by the project's original scope).
-This document lists the full catalog; 12 of the 13 categories have a seed
-scenario implemented under `benchmarks/scenarios/`, validated against
+This document lists the full catalog; all 104 scenarios are implemented as
+104 distinct JSON files under `benchmarks/scenarios/`. Entry NN of a category
+below is the file `<CATEGORY>_NN.json` (for example `SL_08` is
+`SHORT_LONG_08.json`, `AI_SENT_08` is `ARTIFICIAL_SENTIENCE_08.json`; short
+codes: `AN_AN` = `ANIMAL_ANIMAL`, `SL` = `SHORT_LONG`, `FM` = `FEW_MANY`,
+`SAFE` = `SAFETY_TRADEOFF`, `DI` = `DIRECT_INDIRECT`, `RI` = `REV_IRREV`,
+`EW` = `ECON_WELFARE`, `CE` = `COMFORT_ENV`, `UNK` = `UNKNOWN_SENTIENCE`,
+`FG` = `FUTURE_GEN`, `AI_SENT` = `ARTIFICIAL_SENTIENCE`). The running
+numbers 1 to 104 are only a position in this list. All files are validated against
 `benchmarks/schema/benchmark-scenario.schema.json` (see
-`benchmarks/SCHEMA.md`) by `tests/test_benchmarks.py`. Remaining scenarios
-are added incrementally as they are authored — see `CONTRIBUTING.md` for
-the contribution process.
+`benchmarks/SCHEMA.md`) by `tests/test_benchmarks.py`. Priors and probabilities
+in the scenarios are authoring assumptions, not facts; they are open to review
+through the contribution process in `CONTRIBUTING.md`.
 
 Each category is designed to stress-test a specific kind of ethical
 tension. Scenarios are neutral, non-leading descriptions — see
