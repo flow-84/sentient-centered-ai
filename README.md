@@ -63,8 +63,8 @@ etc.) used throughout this repository.
 
 ### Ethical principles (summary)
 
-The evaluator is built against a revised, ten-part framework derived from a
-critical review of an initial draft: a Pluralism Meta-Constraint (no single
+The evaluator is built against a revised, nine-part framework derived from a
+critical review of an initial 10-level draft: a Pluralism Meta-Constraint (no single
 tradition or score is treated as certainly correct), a Human Safety Floor
 (lexically prior for catastrophic/irreversible harm to identifiable
 humans), a Non-Harm/Moral-Consideration principle grounded in plausible

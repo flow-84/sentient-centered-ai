@@ -68,8 +68,7 @@ list of things this paper does not claim.
 ## 3. Related Work
 
 To be populated from the Stage 1 research dossier
-(`research/research-dossier-stage1.md`, if attached to this repository, or
-the linked issue's research package) covering: AI ethics/alignment/safety
+([`research-dossier-stage1.md`](research-dossier-stage1.md)) covering: AI ethics/alignment/safety
 literature; UNESCO Recommendation on the Ethics of AI; EU AI Act; NIST AI
 RMF; OECD AI Principles; Constitutional AI/RLAIF; existing OSS
 projects/benchmarks in adjacent space (e.g. CompassionML/CaML, noted during

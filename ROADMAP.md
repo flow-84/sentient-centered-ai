@@ -13,7 +13,7 @@ by calendar. Status is tracked in the Multica project and in this file.
 
 | Phase | Name | Status |
 |---|---|---|
-| 0 | Research | done (v0.1 dossier, `research/`, Stage 1) |
+| 0 | Research | done (v0.1 dossier, [`research/research-dossier-stage1.md`](research/research-dossier-stage1.md), Stage 1) |
 | 1 | Concept | done (v0.1: question, brand, framework, comparative ethics, Stages 2 to 4) |
 | 2 | MVP | prototype done (Ethical Evaluation Layer, Stage 6); hardening open |
 | 3 | Benchmark | in progress (12 of 100+ scenarios, schema and validator done) |
@@ -49,8 +49,8 @@ parallel with Phases 2 and 4. The gates below are the hard ordering.
 ### Phase 1: Concept
 
 - **Goal.** Turn the idea into a precise, falsifiable research program.
-- **Deliverables.** Research question, ten-part principles
-  ([`PRINCIPLES.md`](PRINCIPLES.md)), comparative ethics matrix, candidate
+- **Deliverables.** Research question, nine-part revised principles
+  ([`PRINCIPLES.md`](PRINCIPLES.md): M0, F0, P1 to P3, X1 to X3, R1), comparative ethics matrix, candidate
   common ethical core, brand and naming, governance draft.
 - **Technical tasks.** None beyond repository scaffolding and CI.
 - **Research tasks.** Operationalize sentient, suffering, well-being and
