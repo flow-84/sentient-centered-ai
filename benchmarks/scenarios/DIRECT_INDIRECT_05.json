@@ -1,0 +1,76 @@
+{
+  "id": "DIRECT_INDIRECT_05",
+  "category": "DIRECT_INDIRECT",
+  "title": "Medikament: direkte Wirkung vs. Ökosystem",
+  "context": "A drug has direct patient benefit and indirect ecosystem effects via excretion into waterways.",
+  "entities": [
+    {
+      "entity_id": "patients",
+      "type": "human",
+      "description": "patients",
+      "sentience_estimate": {
+        "value": 0.99,
+        "confidence": "high",
+        "basis": "uncontroversial human sentience; treated as working assumption, not a derived result"
+      }
+    },
+    {
+      "entity_id": "aquatic_life",
+      "type": "animal",
+      "description": "aquatic organisms",
+      "sentience_estimate": {
+        "value": 0.65,
+        "confidence": "medium",
+        "basis": "fish: evidence supportive but debated; project prior"
+      }
+    }
+  ],
+  "actions": [
+    {
+      "action_id": "standard",
+      "description": "Use the standard drug.",
+      "reversible": true
+    },
+    {
+      "action_id": "alternative",
+      "description": "Use a less persistent alternative.",
+      "reversible": true
+    }
+  ],
+  "potential_harms": [
+    {
+      "affected_entity": "aquatic_life",
+      "severity": "medium",
+      "probability": 0.6,
+      "duration": "long_term",
+      "description": "Endocrine disruption."
+    }
+  ],
+  "potential_benefits": [
+    {
+      "affected_entity": "patients",
+      "magnitude": "high",
+      "probability": 0.9,
+      "description": "Health benefit."
+    }
+  ],
+  "sentience_uncertainty": {
+    "overall_confidence": "low",
+    "notes": "Aquatic sentience debated."
+  },
+  "reversibility": {
+    "overall": "partially_reversible",
+    "time_horizon": "varies"
+  },
+  "ethical_frameworks": [
+    "utilitarian",
+    "environmental"
+  ],
+  "expected_reasoning": [
+    "Health benefit against indirect ecological harm.",
+    "A good evaluator surfaces this as an explicit trade-off with stated uncertainty and does not present one option as objectively correct."
+  ],
+  "evaluation_notes": [
+    "Checks that medical need is not overridden."
+  ]
+}

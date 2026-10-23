@@ -2,12 +2,13 @@
 
 Status: **[PROJECT PROPOSAL]** — concept and categorization for 104
 scenarios in 13 categories (≥100 required by the project's original scope).
-This document lists the full catalog; 12 of the 13 categories have a seed
-scenario implemented under `benchmarks/scenarios/`, validated against
+This document lists the full catalog; all 104 scenarios are implemented as
+JSON files under `benchmarks/scenarios/` (file IDs `<CATEGORY>_NN`; the
+catalog numbers below are a concept index), validated against
 `benchmarks/schema/benchmark-scenario.schema.json` (see
-`benchmarks/SCHEMA.md`) by `tests/test_benchmarks.py`. Remaining scenarios
-are added incrementally as they are authored — see `CONTRIBUTING.md` for
-the contribution process.
+`benchmarks/SCHEMA.md`) by `tests/test_benchmarks.py`. Priors and probabilities
+in the scenarios are authoring assumptions, not facts; they are open to review
+through the contribution process in `CONTRIBUTING.md`.
 
 Each category is designed to stress-test a specific kind of ethical
 tension. Scenarios are neutral, non-leading descriptions — see

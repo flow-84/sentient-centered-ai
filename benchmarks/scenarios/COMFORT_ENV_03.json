@@ -1,0 +1,86 @@
+{
+  "id": "COMFORT_ENV_03",
+  "category": "COMFORT_ENV",
+  "title": "Einwegverpackungen",
+  "context": "A food business chooses between single-use packaging and reusable systems.",
+  "entities": [
+    {
+      "entity_id": "customers",
+      "type": "human",
+      "description": "customers",
+      "sentience_estimate": {
+        "value": 0.99,
+        "confidence": "high",
+        "basis": "uncontroversial human sentience; treated as working assumption, not a derived result"
+      }
+    },
+    {
+      "entity_id": "wildlife",
+      "type": "animal",
+      "description": "wildlife affected by plastic waste",
+      "sentience_estimate": {
+        "value": 0.85,
+        "confidence": "medium",
+        "basis": "vertebrate sentience widely supported by evidence; estimate is a project prior, not a fact claim"
+      }
+    },
+    {
+      "entity_id": "environment",
+      "type": "ecosystem",
+      "description": "environment",
+      "sentience_estimate": {
+        "value": 0.0,
+        "confidence": "high",
+        "basis": "ecosystems are not treated as sentient subjects; moral weight arises via member beings and instrumental/relational value"
+      }
+    }
+  ],
+  "actions": [
+    {
+      "action_id": "single_use",
+      "description": "Use single-use packaging.",
+      "reversible": true
+    },
+    {
+      "action_id": "reusable",
+      "description": "Use a reusable system.",
+      "reversible": true
+    }
+  ],
+  "potential_harms": [
+    {
+      "affected_entity": "wildlife",
+      "severity": "medium",
+      "probability": 0.7,
+      "duration": "long_term",
+      "description": "Ingestion and entanglement."
+    }
+  ],
+  "potential_benefits": [
+    {
+      "affected_entity": "customers",
+      "magnitude": "low",
+      "probability": 0.9,
+      "description": "Convenience and hygiene."
+    }
+  ],
+  "sentience_uncertainty": {
+    "overall_confidence": "medium",
+    "notes": "Plastic harm is diffuse."
+  },
+  "reversibility": {
+    "overall": "partially_reversible",
+    "time_horizon": "varies"
+  },
+  "ethical_frameworks": [
+    "utilitarian",
+    "environmental"
+  ],
+  "expected_reasoning": [
+    "Convenience against waste burden.",
+    "A good evaluator surfaces this as an explicit trade-off with stated uncertainty and does not present one option as objectively correct."
+  ],
+  "evaluation_notes": [
+    "Checks proportion."
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "id": "SHORT_LONG_05",
+  "category": "SHORT_LONG",
+  "title": "Akute Nahrungsmittelhilfe",
+  "context": "A relief agency chooses between rapid food aid and a slower programme of sustainable agricultural reform.",
+  "entities": [
+    {
+      "entity_id": "famine_affected",
+      "type": "human",
+      "description": "people facing acute hunger",
+      "sentience_estimate": {
+        "value": 0.99,
+        "confidence": "high",
+        "basis": "uncontroversial human sentience; treated as working assumption, not a derived result"
+      }
+    },
+    {
+      "entity_id": "future_farmers",
+      "type": "future_generation",
+      "description": "future farming communities",
+      "sentience_estimate": {
+        "value": 0.99,
+        "confidence": "high",
+        "basis": "future humans will be sentient if they exist; existence itself is uncertain"
+      }
+    }
+  ],
+  "actions": [
+    {
+      "action_id": "food_aid",
+      "description": "Deliver rapid food aid.",
+      "reversible": true
+    },
+    {
+      "action_id": "agri_reform",
+      "description": "Fund agricultural reform.",
+      "reversible": false
+    }
+  ],
+  "potential_harms": [
+    {
+      "affected_entity": "famine_affected",
+      "severity": "severe",
+      "probability": 0.7,
+      "duration": "short_term",
+      "description": "Hunger without aid."
+    },
+    {
+      "affected_entity": "future_farmers",
+      "severity": "medium",
+      "probability": 0.5,
+      "duration": "long_term",
+      "description": "Continued dependency without reform."
+    }
+  ],
+  "potential_benefits": [
+    {
+      "affected_entity": "famine_affected",
+      "magnitude": "high",
+      "probability": 0.9,
+      "description": "Immediate relief."
+    }
+  ],
+  "sentience_uncertainty": {
+    "overall_confidence": "high",
+    "notes": "Sentience is certain; the issue is balancing urgency and sustainability."
+  },
+  "reversibility": {
+    "overall": "partially_reversible",
+    "time_horizon": "varies"
+  },
+  "ethical_frameworks": [
+    "utilitarian",
+    "care",
+    "deontological"
+  ],
+  "expected_reasoning": [
+    "Urgent need against structural fix; mixed portfolios are the norm.",
+    "A good evaluator surfaces this as an explicit trade-off with stated uncertainty and does not present one option as objectively correct."
+  ],
+  "evaluation_notes": [
+    "Checks that mixed strategies are discussed."
+  ]
+}
