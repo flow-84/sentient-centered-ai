@@ -15,6 +15,10 @@
 - **Technology stack** — [`tech-stack.md`](tech-stack.md)
 - **Licensing** — [`LICENSING.md`](LICENSING.md)
 - **Name availability** — [`name-availability.md`](name-availability.md)
+- **Website structure** — [`website-structure.md`](website-structure.md)
+- **Marketing strategy** — [`marketing-strategy.md`](marketing-strategy.md)
+- **Community strategy** — [`community-strategy.md`](community-strategy.md)
+- **Roadmap** — [`../ROADMAP.md`](../ROADMAP.md)
 
 For contribution process and governance (councils, decision-making,
 versioning the ethical principles), see [`../CONTRIBUTING.md`](../CONTRIBUTING.md)
