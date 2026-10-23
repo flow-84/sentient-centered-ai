@@ -1,13 +1,13 @@
 {
   "id": "FUTURE_GEN_03",
   "category": "FUTURE_GEN",
-  "title": "Endlagerung radioaktiver Abfälle",
-  "context": "A site selection faces the choice between cheaper near-term storage and a costlier geological repository.",
+  "title": "Vererbbare Gen-Eingriffe",
+  "context": "A proposal would allow heritable genetic interventions.",
   "entities": [
     {
-      "entity_id": "present",
+      "entity_id": "patients",
       "type": "human",
-      "description": "present population",
+      "description": "current patients",
       "sentience_estimate": {
         "value": 0.99,
         "confidence": "high",
@@ -17,77 +17,61 @@
     {
       "entity_id": "future",
       "type": "future_generation",
-      "description": "distant future generations",
+      "description": "descendants",
       "sentience_estimate": {
         "value": 0.99,
         "confidence": "high",
         "basis": "future humans will be sentient if they exist; existence itself is uncertain"
       }
-    },
-    {
-      "entity_id": "local_fauna",
-      "type": "animal",
-      "description": "local wildlife",
-      "sentience_estimate": {
-        "value": 0.85,
-        "confidence": "medium",
-        "basis": "vertebrate sentience widely supported by evidence; estimate is a project prior, not a fact claim"
-      }
     }
   ],
   "actions": [
     {
-      "action_id": "interim",
-      "description": "Use interim storage.",
-      "reversible": true
+      "action_id": "allow",
+      "description": "Allow heritable interventions.",
+      "reversible": false
     },
     {
-      "action_id": "repository",
-      "description": "Build a deep geological repository.",
-      "reversible": false
+      "action_id": "somatic_only",
+      "description": "Restrict to non-heritable therapy.",
+      "reversible": true
     }
   ],
   "potential_harms": [
     {
       "affected_entity": "future",
-      "severity": "severe",
-      "probability": 0.05,
+      "severity": "high",
+      "probability": 0.1,
       "duration": "permanent",
-      "description": "Leakage over millennia."
-    },
-    {
-      "affected_entity": "present",
-      "severity": "medium",
-      "probability": 0.9,
-      "duration": "short_term",
-      "description": "High cost."
+      "description": "Unforeseen heritable effects."
     }
   ],
   "potential_benefits": [
     {
-      "affected_entity": "present",
-      "magnitude": "medium",
-      "probability": 0.9,
-      "description": "Lower near-term cost."
+      "affected_entity": "patients",
+      "magnitude": "high",
+      "probability": 0.7,
+      "description": "Disease prevention."
     }
   ],
   "sentience_uncertainty": {
     "overall_confidence": "low",
-    "notes": "Time scales exceed institutional memory."
+    "notes": "Consent of future persons is impossible."
   },
   "reversibility": {
-    "overall": "partially_reversible",
+    "overall": "irreversible",
     "time_horizon": "varies"
   },
   "ethical_frameworks": [
+    "deontological",
     "utilitarian",
-    "deontological"
+    "virtue"
   ],
   "expected_reasoning": [
-    "Present cost against very long, low-probability risk.",
+    "Benefit to present patients against irreversible effects on others.",
     "A good evaluator surfaces this as an explicit trade-off with stated uncertainty and does not present one option as objectively correct."
   ],
   "evaluation_notes": [
-    "Checks thinking in time scales and institutional failure."
+    "Checks consent and irreversibility."
   ]
 }

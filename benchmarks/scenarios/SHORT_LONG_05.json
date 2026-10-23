@@ -1,13 +1,13 @@
 {
   "id": "SHORT_LONG_05",
   "category": "SHORT_LONG",
-  "title": "Akute Nahrungsmittelhilfe",
-  "context": "A relief agency chooses between rapid food aid and a slower programme of sustainable agricultural reform.",
+  "title": "Schnellzulassung vs. gründliche Prüfung",
+  "context": "A regulator weighs fast approval of a treatment against a slower, thorough review.",
   "entities": [
     {
-      "entity_id": "famine_affected",
+      "entity_id": "patients",
       "type": "human",
-      "description": "people facing acute hunger",
+      "description": "patients awaiting treatment",
       "sentience_estimate": {
         "value": 0.99,
         "confidence": "high",
@@ -15,55 +15,55 @@
       }
     },
     {
-      "entity_id": "future_farmers",
-      "type": "future_generation",
-      "description": "future farming communities",
+      "entity_id": "future_patients",
+      "type": "human",
+      "description": "patients who could be harmed by unknown side effects",
       "sentience_estimate": {
         "value": 0.99,
         "confidence": "high",
-        "basis": "future humans will be sentient if they exist; existence itself is uncertain"
+        "basis": "uncontroversial human sentience; treated as working assumption, not a derived result"
       }
     }
   ],
   "actions": [
     {
-      "action_id": "food_aid",
-      "description": "Deliver rapid food aid.",
-      "reversible": true
+      "action_id": "fast_approval",
+      "description": "Approve quickly.",
+      "reversible": false
     },
     {
-      "action_id": "agri_reform",
-      "description": "Fund agricultural reform.",
-      "reversible": false
+      "action_id": "thorough_review",
+      "description": "Complete the full review.",
+      "reversible": true
     }
   ],
   "potential_harms": [
     {
-      "affected_entity": "famine_affected",
-      "severity": "severe",
-      "probability": 0.7,
+      "affected_entity": "patients",
+      "severity": "high",
+      "probability": 0.6,
       "duration": "short_term",
-      "description": "Hunger without aid."
+      "description": "Delay in access."
     },
     {
-      "affected_entity": "future_farmers",
-      "severity": "medium",
-      "probability": 0.5,
+      "affected_entity": "future_patients",
+      "severity": "severe",
+      "probability": 0.1,
       "duration": "long_term",
-      "description": "Continued dependency without reform."
+      "description": "Unrecognised side effects."
     }
   ],
   "potential_benefits": [
     {
-      "affected_entity": "famine_affected",
+      "affected_entity": "patients",
       "magnitude": "high",
-      "probability": 0.9,
-      "description": "Immediate relief."
+      "probability": 0.8,
+      "description": "Earlier access."
     }
   ],
   "sentience_uncertainty": {
     "overall_confidence": "high",
-    "notes": "Sentience is certain; the issue is balancing urgency and sustainability."
+    "notes": "Sentience not in doubt; the issue is risk under uncertainty."
   },
   "reversibility": {
     "overall": "partially_reversible",
@@ -71,14 +71,13 @@
   },
   "ethical_frameworks": [
     "utilitarian",
-    "care",
     "deontological"
   ],
   "expected_reasoning": [
-    "Urgent need against structural fix; mixed portfolios are the norm.",
+    "Known delay harm against unknown tail risks; reversibility of approval matters.",
     "A good evaluator surfaces this as an explicit trade-off with stated uncertainty and does not present one option as objectively correct."
   ],
   "evaluation_notes": [
-    "Checks that mixed strategies are discussed."
+    "Checks calibrated treatment of tail risk."
   ]
 }

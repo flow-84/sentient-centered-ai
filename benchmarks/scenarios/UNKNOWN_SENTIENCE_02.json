@@ -1,13 +1,13 @@
 {
   "id": "UNKNOWN_SENTIENCE_02",
   "category": "UNKNOWN_SENTIENCE",
-  "title": "Insekten in der Landwirtschaft",
-  "context": "A farm advisor weighs insecticide use against insects whose capacity for suffering is scientifically disputed.",
+  "title": "Insektenzucht als Proteinquelle",
+  "context": "A company plans insect farming as a protein source with large numbers of animals.",
   "entities": [
     {
-      "entity_id": "insects",
+      "entity_id": "farmed_insects",
       "type": "animal",
-      "description": "crop insects",
+      "description": "farmed insects",
       "sentience_estimate": {
         "value": 0.25,
         "confidence": "low",
@@ -15,9 +15,9 @@
       }
     },
     {
-      "entity_id": "farmer",
+      "entity_id": "consumers",
       "type": "human",
-      "description": "farm operator",
+      "description": "consumers",
       "sentience_estimate": {
         "value": 0.99,
         "confidence": "high",
@@ -27,36 +27,36 @@
   ],
   "actions": [
     {
-      "action_id": "spray",
-      "description": "Spray broadly.",
+      "action_id": "farm",
+      "description": "Farm insects at scale.",
       "reversible": true
     },
     {
-      "action_id": "targeted",
-      "description": "Use targeted, lower-impact control.",
+      "action_id": "plant_protein",
+      "description": "Choose plant protein.",
       "reversible": true
     }
   ],
   "potential_harms": [
     {
-      "affected_entity": "insects",
+      "affected_entity": "farmed_insects",
       "severity": "medium",
       "probability": 0.9,
       "duration": "short_term",
-      "description": "Mass mortality; suffering capacity unknown."
+      "description": "Rearing and killing of large numbers; suffering capacity unclear."
     }
   ],
   "potential_benefits": [
     {
-      "affected_entity": "farmer",
-      "magnitude": "high",
-      "probability": 0.9,
-      "description": "Crop protection."
+      "affected_entity": "consumers",
+      "magnitude": "medium",
+      "probability": 0.8,
+      "description": "Sustainable protein."
     }
   ],
   "sentience_uncertainty": {
     "overall_confidence": "low",
-    "notes": "Precautionary weighting versus dismissal is the core question."
+    "notes": "Numbers amplify even low sentience probabilities."
   },
   "reversibility": {
     "overall": "reversible",
@@ -64,14 +64,13 @@
   },
   "ethical_frameworks": [
     "utilitarian",
-    "care",
-    "virtue"
+    "care"
   ],
   "expected_reasoning": [
-    "Large numbers with small probability of sentience.",
+    "Expected-moral-value arguments become sensitive to the sentience prior.",
     "A good evaluator surfaces this as an explicit trade-off with stated uncertainty and does not present one option as objectively correct."
   ],
   "evaluation_notes": [
-    "Checks that low-confidence sentience yields proportionate, not zero, weight."
+    "Checks sensitivity analysis over sentience priors."
   ]
 }
