@@ -1,13 +1,25 @@
-## Sentient-Centered AI Ethics
+## Moral Circle AI
 
-**Open, testable methods for evaluating whether AI systems account for the
-welfare of sentient beings — not only human interests.**
+**Open research on evaluating AI's impact on every sentient being it affects.**
 
-> Working name. This repository was bootstrapped ahead of the project's
-> naming and branding decision (tracked in the parent research package,
-> Stage 2). If a different name is adopted, this repository will be renamed
-> and this README updated; the `sentient-centered-ai` slug is a functional
-> placeholder, not a final brand commitment.
+An open-source research framework for evaluating AI systems' impact on the
+welfare of all plausibly sentient beings they affect, under explicit moral
+and scientific uncertainty.
+
+**Mission.** Moral Circle AI develops and tests open methods for evaluating
+how AI systems affect the welfare of sentient beings, human and non-human,
+under explicit uncertainty rather than false certainty.
+
+**Vision.** A future in which the potential impact of an AI system on
+affected sentient beings is considered during design, not only after
+deployment, and in which that consideration is open to scientific scrutiny
+rather than asserted by authority.
+
+> Naming note. The project name (decided in Stage 2 of the planning package)
+> is **Moral Circle AI**. The repository slug `sentient-centered-ai` is the
+> original working title and is kept on purpose: the repo is bound to the
+> project and existing links, so it is not renamed. Formal domain and
+> trademark availability checks for the name are still open.
 
 ### Problem
 
@@ -170,7 +182,7 @@ project's first research paper is submitted to a venue. Until then, cite the
 repository directly:
 
 ```
-Sentient-Centered AI Ethics (working name). Open-source research project.
+Moral Circle AI. Open-source research project (repository slug: sentient-centered-ai).
 https://github.com/flow-84/sentient-centered-ai
 ```
 
