@@ -125,8 +125,9 @@ only in framing and entry page.
 ## Press and public
 
 - One press page (`/faq`, `/about`) with approved answers to the brand
-  safety attacks (the 30 attacks and answers from Stage 2 are the master
-  list).
+  safety attacks (the 30 attacks and answers in
+  [`research/stage2-projektdefinition-marke.md`](../research/stage2-projektdefinition-marke.md),
+  section 5, are the master list).
 - Briefing rule: we tell journalists what we do not know as clearly as what
   we do. No embargoed hype, no exclusive claims.
 - Correction policy: errors in our own materials are corrected in public
@@ -149,7 +150,7 @@ is proposed to the Core Maintainers with an amount first.
 | Risk | Mitigation |
 |---|---|
 | Framed as a religious project | Religious vocabulary confined to `/buddhist-ethics`; Campaign B rules |
-| Framed as anti-human or vegan advocacy | Principle 9 (human safety floor) front and center; Campaign C rules |
+| Framed as anti-human or vegan advocacy | F0 (Human Safety Floor, `PRINCIPLES.md`) front and center; Campaign C rules |
 | Screenshot of one bad evaluator output goes viral | Disclaimers on every output, human-review flag, public known-failures page |
 | Overclaiming in a thread | Limits line mandatory; second maintainer reviews outbound research claims |
 | Capture by a loud sub-community | Governance, tradition-diversity rule for councils |

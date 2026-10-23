@@ -87,7 +87,8 @@ Plus utility pages: `/faq` (journalist and brand-safety answers),
 
 - **Goal.** Publish the ethical framework as a versioned, criticizable text.
 - **Audience.** Philosophers, ethicists, policy makers.
-- **Content.** The ten principles from `PRINCIPLES.md`, rationale per
+- **Content.** The nine revised principles from `PRINCIPLES.md` (M0, F0,
+  P1 to P3, X1 to X3, R1), rationale per
   principle, changelog with version numbers, how to propose a change.
 - **CTA.** "Challenge a principle."
 - **SEO title.** Principles: A Versioned Ethical Framework for Evaluating AI
@@ -224,8 +225,9 @@ Plus utility pages: `/faq` (journalist and brand-safety answers),
 ### Utility pages
 
 - `/faq`: the brand-safety questions (Buddhism? animals over humans? who
-  decides who lives?) with the approved answers from the Stage 2 attack
-  list. Audience: journalists and public. H1: "Questions we are asked, answered plainly."
+  decides who lives?) with the answers from the 30-item attack list in
+  [`research/stage2-projektdefinition-marke.md`](../research/stage2-projektdefinition-marke.md),
+  section 5, after review. Audience: journalists and public. H1: "Questions we are asked, answered plainly."
 - `/limitations`: mirrors the philosophical limitations section: suffering
   is not fully measurable, sentience is not measurable with certainty,
   morality is not computable, no single score solves ethics. H1: "What this project does not claim."
